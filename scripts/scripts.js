@@ -1,8 +1,8 @@
-function createMessage() {
-	handleSubmit();
+function handleSubmit() {
+	createMessage();
 }
 
-function handleSubmit() {
+function createMessage() {
 	var messageString = $('#message').val().toUpperCase();
 	var messageArray = messageString.split("");
 	orderImages(messageArray);
@@ -34,7 +34,7 @@ function createGIF(imagesArray) {
 		interval: .5,
 		gifWidth: 671.5,
 		gifHeight: 402.5
-	},function(obj) {
+	}, function(obj) {
 		if(!obj.error) {
 			var image = obj.image,
 			animatedImage = document.createElement('img');
@@ -43,4 +43,10 @@ function createGIF(imagesArray) {
 			$('#output').append(animatedImage);
 		}
 	});
+	createDownloadButton(image);
+}
+
+function createDownloadButton(source) {
+	$('a #downloadButton').attr('href', 'http://www.google.com');
+	$('a #downloadButton').attr('download', 'http://messagesfromwill.com/images/letters/letter-None.jpg');
 }
