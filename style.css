@@ -1,0 +1,161 @@
+* {
+	box-sizing: border-box;
+}
+body {	
+	color: #f5f5f5;
+	font-family: 'Questrial', sans-serif;
+	font-size: 18px;
+	text-align: center;
+	background-color: #1b1818;
+	background-image: url("images/zwartevilt_@2X.jpg");
+	padding: 0;
+	margin: 0;
+}
+
+content {
+	width: 600px;
+	margin: 80px auto;
+	display: block;
+}
+
+#logo img{
+	width: 400px;
+	margin: 0 auto;
+}
+
+
+header p {
+	width: 400px;
+	margin: 0 auto;
+	padding: 0 0 50px 0;
+}
+
+p.caption {
+	font-size: 13px;
+	padding: 10px 0 50px 0;
+	clear: both;
+}
+
+input {
+	width: 425px;
+	padding: 10px 5px;
+	border: 2px solid #1c1818;
+	float: left;
+	border-radius: 5px;
+}
+
+input[type=text], textarea {
+  -webkit-transition: all 0.40s ease-in-out;
+  -moz-transition: all 0.40s ease-in-out;
+  -ms-transition: all 0.40s ease-in-out;
+  -o-transition: all 0.40s ease-in-out;
+  outline: none;
+  border: 1px solid #260a0a;
+}
+
+input:focus {
+	border: 1px solid #9d0707;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 10px rgba(226, 35, 35, 1);
+  border: 1px solid rgba(226, 35, 35, 1);
+}
+
+
+button {
+	width: 150px;
+	font-family: 'Questrial', sans-serif;
+	padding: 10px;
+	float: right;
+	border-radius: 100px;
+	background-color: #8c8787;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    outline: none;
+	cursor: pointer;
+
+}
+
+button:hover {
+  -webkit-transition: all 0.40s ease-in-out;
+  -moz-transition: all 0.40s ease-in-out;
+  -ms-transition: all 0.40s ease-in-out;
+  -o-transition: all 0.40s ease-in-out;
+	background-color: #9d0707;
+}
+
+#output img{
+	clear: both;
+	width: 600px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+#social {
+	float:right;
+    position:relative;
+    left:-50%;
+    text-align:left;
+}
+
+ul {
+	list-style:none;
+    position:relative;
+    left:50%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 6px 30px;
+    text-decoration: none;
+    background-color: #8c8787;
+    border-radius: 100px;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+li a:hover {
+	-webkit-transition: all 0.40s ease-in-out;
+  -moz-transition: all 0.40s ease-in-out;
+  -ms-transition: all 0.40s ease-in-out;
+  -o-transition: all 0.40s ease-in-out;
+    background-color: #555252;
+}
+
+footer {
+	padding: 30px;
+	width: 100%;
+	height: 170px;
+	background-color: black;
+	margin: 50px 0 0 0;
+}
+
+footer p {
+	font-size: 13px;
+	padding: 0 10px;
+	line-height: 1.25;
+}
+
+footer a {
+	font-style: none;
+	color: #dfdbdb;
+}
+
+footer a:active, footer a:visited{
+	color: #d0b8b8;
+}

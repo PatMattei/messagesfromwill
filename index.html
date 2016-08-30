@@ -4,8 +4,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title></title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css" />
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -15,12 +17,32 @@
 	<script src="scripts/gifshot.js" type="text/javascript"></script>
 </head>
 <body>
-	<div id="input">
-		<input type="text" id="message">
-		<button onclick="createMessage();">Submit</button>
-	</div>
-	<div id="output">
-		<img src="http://messages.patrickmattei.com/images/letters/letter-None.jpg" id="activeImg" style="width: 671.5px; 402.5px">
-	</div>
+	<content class="clearfix">
+		<header> 
+			<div id="logo">
+				<img src="images/messages.png" alt="Messages From Will">
+			</div>
+			<p>Send a message from the Upside Down</p>
+		</header>
+		<div id="input">
+			<input type="text" id="message" label="type here">
+			<button onclick="createMessage();">Generate Gif</button>
+		</div>
+		<!-- <p class="caption">Pro-tip: shorter messages are easier to read</p> -->
+		<div id="output">
+			<img src="http://messages.patrickmattei.com/images/letters/letter-None.jpg" id="activeImg">
+		</div>
+		<div id="social">
+			<ul>
+				<li><a href="#">Tweet It</a></li>
+				<li><a href="#">Download Gif</a></li>
+				<li><a href="#">Get Image Link</a></li>
+			</ul>
+		</div>
+	</content>
+	<footer>
+		<p>Thank you for visiting messages from Will. We don't own Stranger Things. We just really liked the show, and wanted to make a fun little side project for the internet.</p>
+		<p>Made by <a href="http://www.clairelines.com/" target="_blank">Claire Lines</a> and <a href="#">Patrick Mattei</a></p>
+	</footer>
 </body>
 </html>
