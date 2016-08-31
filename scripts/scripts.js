@@ -42,17 +42,17 @@ function createGIF(imagesArray) {
 
 			createDownloadButton(image);
 		}
-	});	
+	});
 }
 
 function createDownloadButton(image) {
 	downloadImage = document.createElement('a');
 	downloadImage.href = image;
-	downloadImage.text = "Download Gif";
 	downloadImage.download = image;
+	downloadImage.src = image;
 	downloadImage.id = "downloadButton";
+	downloadImage.text = "Download Gif";
 
 	$('#buttonsList').append("<li></li>");
 	$('#buttonsList li').append(downloadImage);
-
 }
