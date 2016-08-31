@@ -21,9 +21,9 @@ function orderImages(messageArray) {
 			imagesArray.push("http://messagesfromwill.com/images/letters/letter-" + value + ".jpg");
 		}
 	});
-	imagesArray.push("http://messagesfromwill.com/images/letters/letter-ALL.jpg");
-	imagesArray.push("http://messagesfromwill.com/images/letters/letter-None.jpg");
-	imagesArray.push("http://messagesfromwill.com/images/letters/letter-ALL.jpg");
+	// imagesArray.push("http://messagesfromwill.com/images/letters/letter-ALL.jpg");
+	// imagesArray.push("http://messagesfromwill.com/images/letters/letter-None.jpg");
+	// imagesArray.push("http://messagesfromwill.com/images/letters/letter-ALL.jpg");
 	createGIF(imagesArray);
 }
 
@@ -41,12 +41,29 @@ function createGIF(imagesArray) {
 			animatedImage.src = image;
 			$('#output').empty();
 			$('#output').append(animatedImage);
+			$('#output').children().addClass("activeImg");
+
+			downloadImage = document.createElement('a');
+			downloadImage.href = image;
+			downloadImage.src = image;
+			downloadImage.download = image;
+			$('#output').append(downloadImage);
+			$('#output').children("a").attr("id", "downloadButton");
+			$('#downloadButton').css("width", "100px"); 
+			$('#downloadButton').css("height", "100px");
+			$('#downloadButton').css("background-color", "green");
+			$('#downloadButton').css("position", "absolute");
+			$('#downloadButton').attr("download");
+			$('#downloadButton').attr(download);
 		}
 	});
-	createDownloadButton(image);
+	createDownloadButton();
 }
 
-function createDownloadButton(source) {
-	$('a #downloadButton').attr('href', 'http://www.google.com');
-	$('a #downloadButton').attr('download', 'http://messagesfromwill.com/images/letters/letter-None.jpg');
+function createDownloadButton() {
+	var uri = $(".activeImg").attr("src");
+	// console.log(uri);
+	// $('a #downloadButton').attr("href", uri);
+	$('#downloadButton').attr("href", uri);
+
 }
