@@ -45,21 +45,21 @@ input {
 }
 
 input[type=text], textarea {
-  -webkit-transition: all 0.40s ease-in-out;
-  -moz-transition: all 0.40s ease-in-out;
-  -ms-transition: all 0.40s ease-in-out;
-  -o-transition: all 0.40s ease-in-out;
-  outline: none;
-  border: 1px solid #260a0a;
+	-webkit-transition: all 0.40s ease-in-out;
+	-moz-transition: all 0.40s ease-in-out;
+	-ms-transition: all 0.40s ease-in-out;
+	-o-transition: all 0.40s ease-in-out;
+	outline: none;
+	border: 1px solid #260a0a;
 }
 
 input:focus {
 	border: 1px solid #9d0707;
 }
- 
+
 input[type=text]:focus, textarea:focus {
-  box-shadow: 0 0 10px rgba(226, 35, 35, 1);
-  border: 1px solid rgba(226, 35, 35, 1);
+	box-shadow: 0 0 10px rgba(226, 35, 35, 1);
+	border: 1px solid rgba(226, 35, 35, 1);
 }
 
 
@@ -70,22 +70,22 @@ button {
 	float: right;
 	border-radius: 100px;
 	background-color: #8c8787;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    outline: none;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	outline: none;
 	cursor: pointer;
 
 }
 
 button:hover {
-  -webkit-transition: all 0.40s ease-in-out;
-  -moz-transition: all 0.40s ease-in-out;
-  -ms-transition: all 0.40s ease-in-out;
-  -o-transition: all 0.40s ease-in-out;
+	-webkit-transition: all 0.40s ease-in-out;
+	-moz-transition: all 0.40s ease-in-out;
+	-ms-transition: all 0.40s ease-in-out;
+	-o-transition: all 0.40s ease-in-out;
 	background-color: #9d0707;
 }
 
@@ -98,43 +98,43 @@ button:hover {
 
 #social {
 	float:right;
-    position:relative;
-    left:-50%;
-    text-align:left;
+	position:relative;
+	left:-50%;
+	text-align:left;
 }
 
 ul {
 	list-style:none;
-    position:relative;
-    left:50%;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
-    clear: both;
+	position:relative;
+	left:50%;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	clear: both;
 }
 
 li {
-    float: left;
+	float: left;
 }
 
 li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 6px 30px;
-    text-decoration: none;
-    background-color: #8c8787;
-    border-radius: 100px;
-    margin: 0 10px;
-    font-size: 14px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 6px 30px;
+	text-decoration: none;
+	background-color: #8c8787;
+	border-radius: 100px;
+	margin: 0 10px;
+	font-size: 14px;
 }
 
 li a:hover {
 	-webkit-transition: all 0.40s ease-in-out;
-  -moz-transition: all 0.40s ease-in-out;
-  -ms-transition: all 0.40s ease-in-out;
-  -o-transition: all 0.40s ease-in-out;
-    background-color: #555252;
+	-moz-transition: all 0.40s ease-in-out;
+	-ms-transition: all 0.40s ease-in-out;
+	-o-transition: all 0.40s ease-in-out;
+	background-color: #555252;
 }
 
 footer {

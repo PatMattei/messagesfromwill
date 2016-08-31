@@ -42,22 +42,17 @@ function createGIF(imagesArray) {
 			$('#output').empty();
 			$('#output').append(animatedImage);
 			$('#output').children().addClass("activeImg");
-
 			downloadImage = document.createElement('a');
 			downloadImage.href = image;
-			downloadImage.src = image;
+			downloadImage.text = "Download Gif";
 			downloadImage.download = image;
-			$('#output').append(downloadImage);
-			$('#output').children("a").attr("id", "downloadButton");
-			$('#downloadButton').css("width", "100px"); 
-			$('#downloadButton').css("height", "100px");
-			$('#downloadButton').css("background-color", "green");
-			$('#downloadButton').css("position", "absolute");
-			$('#downloadButton').attr("download");
-			$('#downloadButton').attr(download);
+			downloadImage.id = "downloadButton";
+
+			$('#buttonsList').append("<li></li>");
+			$('#buttonsList li').append(downloadImage);
 		}
 	});
-	createDownloadButton();
+	// createDownloadButton();
 }
 
 function createDownloadButton() {
