@@ -35,10 +35,10 @@
 			</div>
 			<p>Send a message from the Upside Down</p>
 		</header>
-		<div id="input">
+		<form id="input" onsubmit="handleSubmit(); return false;">
 			<input type="text" id="message" label="type here">
-			<button onclick="handleSubmit();">Generate Gif</button>
-		</div>
+			<button type="submit" onclick="handleSubmit();">Generate Gif</button>
+		</form>
 		<div id="output">
 			<img src="http://messagesfromwill.com/images/letters/letter-None.jpg" id="activeImg">
 		</div>

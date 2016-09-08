@@ -1,4 +1,5 @@
 function handleSubmit() {
+	return false;
 	$('#buttonsList').empty();
 	createMessage();
 }
@@ -49,7 +50,7 @@ function createGIF(imagesArray) {
 function createDownloadButton(image) {
 	downloadImage = document.createElement('a');
 	downloadImage.href = image;
-	downloadImage.download = image;
+	downloadImage.download = $('#message').val().toLowerCase();;
 	downloadImage.src = image;
 	downloadImage.id = "downloadButton";
 	downloadImage.text = "Download Gif";
