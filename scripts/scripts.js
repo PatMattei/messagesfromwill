@@ -1,5 +1,5 @@
 function handleSubmit() {
-	// $('#buttonsList').empty();
+	$('#buttonsList').empty();
 	createMessage();
 }
 
