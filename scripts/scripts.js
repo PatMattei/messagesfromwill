@@ -42,7 +42,7 @@ function createGIF(imagesArray) {
 			$('#output').children().addClass("activeImg");
 			$(".activeImg").attr('download', $('#message').val().toLowerCase());
 
-			createDownloadButton(image);
+			// createDownloadButton(image);
 		}
 	});
 }
