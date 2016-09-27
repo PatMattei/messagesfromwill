@@ -1,0 +1,34 @@
+content {
+	margin: 0;
+	width: 100%;
+}
+
+#logo img {
+	width: 90%;
+}
+
+header p {
+	width: 95%;
+}
+
+#input {
+	padding: 0 5%
+}
+
+#message {
+	float: none;
+	width: 55%;
+	padding-left: 10%;
+}
+
+#output {
+	width:100%;
+}
+
+#output img {
+	width: 95%;
+}
+
+#submit {
+	width: 35%
+}
