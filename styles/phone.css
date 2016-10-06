@@ -1,0 +1,59 @@
+content {
+	margin: 0;
+	width: 100%;
+}
+
+#logo img {
+	width: 90%;
+}
+
+header p {
+	width: 95%;
+}
+
+#input {
+	padding: 0 5%
+}
+
+#message {
+	float: none;
+	width: 55%;
+}
+
+#output {
+	width:100%;
+}
+
+#output img {
+	width: 95%;
+}
+
+#submit {
+	width: 35%;
+}
+
+/* Landscape */
+@media only screen 
+and (orientation: landscape) {
+	#logo img {
+		width: 50%;
+	}
+	header p{
+		padding: 0 0 25px 0;
+	}
+}
+}
+
+@media screen and (orientation: landscape) {
+	#logo img {
+		width: 60%;
+	}
+
+	header p {
+		padding: 0 0 25px 0;
+	}
+
+	#output img {
+		width: 85%;
+	}
+}

@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>Messages From Will</title>
-	<link rel = "stylesheet" type = "text/css" href = "style.css" />
+
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel = "stylesheet" type = "text/css" href = "styles/style.css">
+	<link rel = "stylesheet" type = "text/css"  media="only screen and (max-device-width: 736px)" href = "styles/phone.css">
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -37,7 +38,7 @@
 		</header>
 		<form id="input" onsubmit="handleSubmit(); return false;">
 			<input type="text" id="message" label="type here">
-			<button type="submit">Generate Gif</button>
+			<button type="submit" id="submit">Generate Gif</button>
 		</form>
 		<div id="output">
 			<img src="http://messagesfromwill.com/images/letters/letter-None.jpg" id="activeImg">
