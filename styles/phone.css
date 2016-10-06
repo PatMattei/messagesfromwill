@@ -29,7 +29,6 @@ header p {
 }
 
 #submit {
-<<<<<<< HEAD
 	width: 35%;
 }
 
@@ -43,8 +42,6 @@ and (orientation: landscape) {
 		padding: 0 0 25px 0;
 	}
 }
-=======
-	width: 35%
 }
 
 @media screen and (orientation: landscape) {
@@ -60,4 +57,3 @@ and (orientation: landscape) {
 		width: 85%;
 	}
 }
->>>>>>> 56371520083fcbde2778c5fff9b06338a346510e
